@@ -167,7 +167,7 @@ def login():
             y = node.rect['y']
             break
     button = ""
-    for node in driver.find_elements_by_xpath("//a[@class='buttonblue']|//a[@class='xmlbutton']"):
+    for node in driver.find_elements_by_xpath("//a[@class='buttonblue']|//a[@class='xmlbutton']|//a[@class='buttongreen']"):
         if abs(node.rect['y'] - y) < 10:
             button = node
             break
